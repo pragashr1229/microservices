@@ -19,6 +19,6 @@ public class HelloCOntroller {
 	public String hello() {
 		String results = proxyForServerApp.callTest1();
 		System.out.println("reuslt ==>"+results);
-		return results;
+		return "Output Received from Feign Client :: "+results;
 	}
 }
